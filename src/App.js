@@ -47,6 +47,7 @@ export default function App() {
       <h2> {meaning} </h2>
       {fruits.map((fruit) => (
         <span
+          key={fruit}
           onClick={() => emojiClickHandler(fruit)}
           style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
         >
